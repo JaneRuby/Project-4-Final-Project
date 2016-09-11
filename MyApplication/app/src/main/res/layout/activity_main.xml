@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#303F9F">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/header_gradient"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:paddingTop="100dp"
+                android:background="@drawable/tool_bar_logo"
+                android:layout_width="100dp"
+                android:layout_height="500dp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:paddingTop="10dp"
+        android:padding="10dp"
+        android:text="What can Neil give you advice about?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:text="Although Neil knows a lot about a lot of things, he would like to impart wisdom on love, __________, and of course...Me! "/>
+    <EditText
+        android:layout_gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:id="@+id/edittext"
+        android:hint="What would you like to ask Neil?"
+        android:background="@drawable/rounded_edit_text" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:id="@+id/submit_button"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_background"
+        android:text="Fun Facts about Neil"
+        android:id="@+id/fun_facts"
+        android:textColor="#ffffff"
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/neil_multi"
+        android:src="@drawable/neil_multi"
+        android:baselineAlignBottom="true"/>
+
+</LinearLayout>

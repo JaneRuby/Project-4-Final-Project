@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303F9F"
+    tools:context="com.example.janerubygrissom.myapplication.Response">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/header_gradient"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="7dp">
+            <Button
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingTop="100dp"
+                android:background="@drawable/button_background"
+                android:layout_width="100dp"
+                android:text="Ask Again"
+                android:textColor="#ffffff"
+                android:layout_height="40dp"
+                android:id="@+id/askAgain"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/share"
+                android:layout_alignParentRight="true"
+                android:id="@+id/ic_menu_share"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edit_text"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/neils"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+
+
+</RelativeLayout>
