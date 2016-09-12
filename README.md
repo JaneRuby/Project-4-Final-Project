@@ -1,4 +1,4 @@
-# AskNeil: an app experience
+# AskNeil: an app experience <img src="https://raw.githubusercontent.com/JaneRuby/Neils/master/logo.png">
 
 AskNeil combines the IBM Watson Conversation API with original artwork and design to create a Neil Diamond-themed advice app. When opened, the app prompts the user to ask the Neil bot something about love or music. Using cloud-based pre-programming through IBM's Watson service, the bot interprets the question through natural language processing and responds with a Neil Diamond-themed answer. The app displays one of several hand-drawn Neils with the answer, and the user can share the response on social media or return to the original prompt. The user can also view fun facts about Neil Diamond at the prompt screen.
 
