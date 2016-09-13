@@ -1,4 +1,4 @@
-package com.example.janerubygrissom.myapplication;
+package com.neildiamond.janerubygrissom.myapplication;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -19,15 +19,13 @@ public class FunFactsList extends AppCompatActivity {
         funList = (ListView) findViewById(R.id.facts_list);
 
 
-
-
         FunFactAdapter adapter = new FunFactAdapter(this,getFactsList());
 
         funList.setAdapter(adapter);
 
 
-
     }
+
 
     public ArrayList<FunFacts> getFactsList(){
         // let's make a list

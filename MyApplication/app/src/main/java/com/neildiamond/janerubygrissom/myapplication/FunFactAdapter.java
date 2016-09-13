@@ -1,8 +1,9 @@
-package com.example.janerubygrissom.myapplication;
+package com.neildiamond.janerubygrissom.myapplication;
 
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,8 +22,16 @@ public class FunFactAdapter extends BaseAdapter {
     public FunFactAdapter(Context context, ArrayList<FunFacts> factsList){
         mContext = context;
         mFactsList = factsList;
+    }
 
+    @Override
+    public int getViewTypeCount() {
+        return getCount();
+    }
 
+    @Override
+    public int getItemViewType(int position) {
+        return position;
     }
 
     @Override
@@ -43,7 +52,9 @@ public class FunFactAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         if(view==null){
-            view = LayoutInflater.from(mContext).inflate(android.R.layout.simple_list_item_2, viewGroup, false);
+
+            LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            view = inflater.inflate(android.R.layout.simple_list_item_2, viewGroup, false);
             TextView tv = (TextView) view.findViewById(android.R.id.text1);
             TextView tv2 = (TextView) view.findViewById(android.R.id.text2);
 
@@ -58,6 +69,9 @@ public class FunFactAdapter extends BaseAdapter {
 
             tv.setText(mFactsList.get(i).getFactTitle());
             tv2.setText(mFactsList.get(i).getFactBody());
+        }
+        else{
+            Log.d("FunFactAdapter", "getView: else");
         }
 
         return view;

@@ -1,4 +1,4 @@
-package com.example.janerubygrissom.myapplication;
+package com.neildiamond.janerubygrissom.myapplication;
 
 /**
  * Created by janerubygrissom on 9/8/16.

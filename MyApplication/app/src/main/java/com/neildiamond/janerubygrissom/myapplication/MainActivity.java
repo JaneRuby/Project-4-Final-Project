@@ -1,11 +1,13 @@
-package com.example.janerubygrissom.myapplication;
+package com.neildiamond.janerubygrissom.myapplication;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -35,8 +37,12 @@ public class MainActivity extends AppCompatActivity {
                 if (editText.getText().toString().equals("")) {
                     editText.setError("Please enter text!");
                 } else {
+                    //hide keyboard
+                    InputMethodManager manager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                    manager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),InputMethodManager.HIDE_NOT_ALWAYS);
+
                     Intent intent = new Intent(MainActivity.this, Response.class);
-                    intent.putExtra("RobertZimmerman", editText.getText().toString());
+                    intent.putExtra("RobertZimmerman", editText.getText().toString().trim());
                     startActivity(intent);
                 }
             }

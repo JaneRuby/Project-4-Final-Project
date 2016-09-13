@@ -1,4 +1,4 @@
-package com.example.janerubygrissom.myapplication;
+package com.neildiamond.janerubygrissom.myapplication;
 
 import org.junit.Test;
 

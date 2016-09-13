@@ -1,4 +1,4 @@
-package com.example.janerubygrissom.myapplication;
+package com.neildiamond.janerubygrissom.myapplication;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
