@@ -14,6 +14,6 @@ As an artist and a developer, I attempted to make sure the user feels artist’s
 
 As the creator of the Neil Watson bot, I tried merging ideas from both my own experiences as a fan, as well as how I believe Neil Diamond himself would respond. There are endless ways to approach this intended communication program, which really pushed me to think about linguistics and Neil lore as much as programming. In the IBM Watson application, I created language prompt flow diagrams that charted the train of thought that I wanted my bot to have. Then I carefully crafted the bot’s answers to the specific language prompts. At this stage, time constraints limited the Neil bot’s knowledge, but the slow-growth technology gives the project long-term potential for continued app development.
 
-
+<img src= "https://raw.githubusercontent.com/JaneRuby/Neils/master/14359738_10153766792102633_2018102051_o.png" width="200px"/> <img src="https://raw.githubusercontent.com/JaneRuby/Neils/master/14360398_10153766792092633_1065751251_o.png" width="200px"/>
 
 
